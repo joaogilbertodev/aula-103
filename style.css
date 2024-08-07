@@ -1,0 +1,8 @@
+.heading {
+    width: 35%;
+    font-size: 30px;
+}
+#camera{
+    border-style: outset;
+    width: 500px; height: 400px;
+}
