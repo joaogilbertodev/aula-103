@@ -4,5 +4,9 @@
 }
 #camera{
     border-style: outset;
-    width: 500px; height: 400px;
+    width: 510px; height: 380px;
+}
+#resultado{
+    border-style: outset;
+    width: 410px; height: 325px;
 }
