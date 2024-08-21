@@ -19,3 +19,17 @@ classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/e
 function modelLoaded(){
     console.log("modelo carregaddo")
 }
+function check(){
+    img=document.getElementById("imgCapturada");
+    classifier.classify(img, gotResult);
+}
+function gotResult(error, results){
+    if(error){
+        console.error(error)
+    }
+    else{
+        console.log(results)
+        document.getElementById("nameResult").innerHTML="objeto identificado: "+results[0].label
+        document.getElementById("porcentagem").innerHTML=results[0].confidence.toFixed(2)
+    }
+}
